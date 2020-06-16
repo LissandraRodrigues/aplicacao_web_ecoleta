@@ -1,3 +1,6 @@
+// Autora: Luiza Lissandra R. Rosa
+// 15/06/2020 
+
 // Criação dos Pontos de Coleta.
 
 // Função que exibe a lista de Estados do Brasil.

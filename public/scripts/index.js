@@ -1,4 +1,7 @@
-// Pesquisa os Pontos de Coleta.
+// Autora: Luiza Lissandra R. Rosa
+// 15/06/2020 
+
+// Pesquisar os Pontos de Coleta.
 
 // Botão de pesquisar.
 const buttonSearch = document.querySelector("#page-home main a")

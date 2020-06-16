@@ -1,3 +1,6 @@
+// Autora: Luiza Lissandra R. Rosa
+// 15/06/2020 
+
 // Servidor do projeto.
 
 // TERMINAL $ npm start -> Inicia o servidor. 

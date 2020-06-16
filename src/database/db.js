@@ -1,3 +1,6 @@
+// Autora: Luiza Lissandra R. Rosa
+// 15/06/2020 
+
 // Cria o Banco de Dados utilizado na aplicação.
 
 // Importar a dependência do SQLite 3.

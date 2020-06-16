@@ -1,0 +1,58 @@
+{# Página de Quem somos. #}
+
+{% extends "layout.html" %}
+
+{% set pageId = "page-who-and-contribution" %}
+
+{% block title %}
+
+    <title>
+
+        Quem somos?
+
+    </title>
+
+{% endblock title %}
+
+{% block styles %}
+
+        <link rel = "stylesheet" href = "/styles/pages-who-and-contribution.css">
+
+{% endblock styles %}
+
+{% block content %}
+
+    {# Incluindo o Cabeçalho. #}
+    {% include "partials/page-header.html" %}
+      
+    <main>
+
+        <h1>
+
+            Quem somos?
+
+        </h1>
+
+        <div class = "content">
+
+            <p class = "who">
+
+                Somos uma iniciativa, sem fins lucrativos, desenvolvida para <br>
+                pessoas que possuem o objetivo em comum de contribuir com  <br>
+                a natureza. Conectamos pessoas a Pontos de Coleta em todo <br>
+                o Brasil, por meio da contribuição voluntária de nossos usuários. <br>
+                
+                <br>
+
+                Se junte a nós! Crie ou pesquise um Ponto de Coleta agora mesmo! <br>
+                A natureza e a equipe do Ecoleta agradecem &#128154;
+
+            </p>
+
+            <img src = "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2348&q=80">
+
+        </div>
+
+    </main>
+
+{% endblock content %}

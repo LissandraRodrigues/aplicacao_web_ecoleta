@@ -1,0 +1,204 @@
+/* CSS da Página Home. */
+
+/* Formatação da Página no geral. */
+#page-home {
+
+    background: url("../assets/home-background.svg") no-repeat;
+
+    /* Posição do background. */
+    background-position: 35vw bottom;
+
+    height: 100vh;
+
+}
+
+/* Conteúdo da página. */
+#page-home .content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    margin: 0 auto;
+
+    max-width: 1100px;
+
+    width: 90%;
+
+}
+
+/* Cabeçalho da Página. */
+#page-home header {
+
+    align-items: center;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+}
+
+/* Tag <a> inserida no Cabeçalho. */
+#page-home header a {
+
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    display: flex;
+
+    font-weight: 700;
+
+    margin-top: 10px;
+    
+}
+
+/* Tag <span> inserida dentro da tag <a> do Cabeçalho. */
+#page-home header a span{
+
+    display: flex;
+
+    height: 20px;
+
+    margin-right: 10px;
+
+    width: 20px;
+
+}
+
+/* span - Quem somos? */
+#page-home header a.first span{ 
+
+    /* SVG de duas pessoas. */
+    background-image: url("../assets/people_green.svg");
+
+}
+
+/* span - Contribuir. */
+#page-home header a.second span{ 
+
+    /* SVG de cifrão. */
+    background-image: url("../assets/money.svg");
+
+    /* Para o SVG não ser repetido na exibição. */
+    background-repeat: no-repeat;
+
+    margin-right: 5px;
+
+}
+
+/* span - Cadastrar um Ponto de Coleta. */
+#page-home header a.third span{ 
+
+    /* SVG de cadastro. */
+    background-image: url("../assets/log-in.svg");
+
+}
+
+/* Parte principal da página. */
+#page-home main {
+
+    max-width: 560px;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+/* <h1> da parte principal da página. */
+#page-home main h1 {
+
+    font-size: 54px;
+}
+
+/* Parágrafo da parte principal da página. */
+#page-home main p {
+
+    font-size: 24px;
+
+    margin-top: 24px;
+
+    line-height: 38px;
+
+}
+
+/* Tag a contida na parte principal da página. */
+#page-home main a {
+
+    align-items: center;
+
+    /* Background-color definido no arquivo main.css */
+    background-color: var(--primary-color);
+
+    border-radius: 8px;
+
+    display: flex;
+
+    height: 72px;
+
+    margin-top: 40px;
+
+    max-width: 360px;
+
+    transition: 400ms;
+
+    width: 100%;
+
+}
+
+#page-home main a:hover {
+
+    /* Background-color definido no arquivo main.css */
+    background-color: var(--hover-color);
+
+}
+
+#page-home main a span {
+
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.08);
+
+    border-bottom-left-radius: 8px;
+
+    border-top-left-radius: 8px;
+
+    display: flex;
+    
+    height: 72px;
+
+    justify-content: center;
+    
+    width: 72px;
+
+}
+
+#page-home main a span::after {
+
+    background-image: url("../assets/search.svg");
+
+    content: "";
+
+    height: 20px;
+
+    width: 20px;
+
+}
+
+#page-home main a strong {
+
+    color: white;
+
+    flex: 1;
+
+    text-align: center;
+
+}

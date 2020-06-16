@@ -1,0 +1,40 @@
+{# Página que por cima da Home para pesquisar os Pontos de Coleta. #}
+   
+   <div id = "modal" class = "hide">
+
+    {# Conteúdo da Página. #}
+    <div class = "content">
+
+        {# Cabeçalho. #}
+        <div class = "header"> 
+
+            <h1> Pontos de Coleta </h1> 
+
+            <a href = "#"> Fechar </a>
+
+        </div>
+
+        {# Formulário que direciona para página de exibição de Pontos de Coleta. #}
+        <form action = "/search-results"> 
+
+            <label for = "search"> Estado </label>
+
+            <div class = "search field">
+
+                {# Entrada de dados do usuário. #}
+                <input type = "text" name = "search" placeholder = "Pesquise por Estado" required = "required">
+
+                {# Botão de busca. #}
+                <button>
+
+                    <img src = "assets/search.svg" alt = "Buscar">
+
+                </button>
+
+            </div> 
+
+        </form>
+
+    </div>
+
+</div>

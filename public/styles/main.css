@@ -1,0 +1,54 @@
+/* CSS em comum de todas páginas. */
+
+/* Configurações raíz. */
+:root {
+
+    --background-color: #f0f0f5;
+
+    --hover-color: #2fb86e;
+
+    --primary-color: #34cb79;
+
+    --title-color: #322153;
+
+}
+
+/* Tudo. */
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+html {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+
+    background: var(--background-color);
+
+    -webkit-font-smoothing: antialiased;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    
+    color: var(--title-color);
+
+    font-family: 'Ubuntu', sans-serif;
+
+}

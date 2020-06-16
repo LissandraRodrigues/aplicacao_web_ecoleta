@@ -1,0 +1,305 @@
+/* CSS da Página de Criação de Ponto de Coleta. */
+
+/* Formatação da Página no geral. */
+#page-create-point {
+
+    /* Alinhamento de caixa pelo lado de fora da caixa. */
+    margin: 0 auto;
+
+    /* Máximo que a largura pode alcançar. */
+    max-width: 1100px;  
+
+    width: 90%;
+
+}
+
+/* Cabeçalho da Página. */
+#page-create-point header {
+
+    align-items: center;
+
+    /* Alinhamento de caixa pelo lado de dentro da caixa. */
+    display: flex;
+
+    /* Determina que os elementos serão organizados por espaços iguais entre eles. */
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+}
+
+/* Tag <a> inserida no Cabeçalho. */
+#page-create-point header a {
+
+    align-items: center;
+
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    /* Display que permite os itens ficarem um do lado do outro de forma flexível. */
+    display: flex;
+
+    /* Tamanho da fonte. */
+    font-weight: bold;
+
+}
+
+/* Tag <span> inserida dentro da tag <a> do Cabeçalho. */
+#page-create-point header a span {
+
+    /* Setinha - Voltar para Home */
+    background-image: url(../assets/arrow-left.svg);
+
+    display: flex;
+
+    height: 24px;
+
+    margin-right: 16px;
+
+    width: 20px;
+
+}
+
+/* Formulário. */
+form {
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    margin: 80px auto;
+
+    /* Máximo de largura. */
+    max-width: 730px;
+
+    /* Preechimento. */
+    padding: 64px;
+
+}
+
+/* Texto <h1> inserido no Formulário. */
+form h1 {
+
+    font-size: 36px;
+
+}
+
+/* <fieldset> é onde estão colocados os campos dos itens de coleta. Está inserido no <form>. */
+form fieldset {
+
+    border: 0;
+
+    margin-top: 64px;
+
+}
+
+/* Legend inserido no form. */
+form legend {
+
+    align-items: center; 
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    width: 100%;
+
+}
+
+/* <h2> inserido dentro do legend do form. */
+form legend h2 {
+
+    font-size: 24px;
+
+}
+
+/* <pan> inserido dentro do legend do form. */
+form legend span {
+
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    font-size: 14px;
+}
+
+/* Classe field inserida dentro do form */
+form .field {
+
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    margin-bottom: 24px;
+
+}
+
+/* Classe field-group inserida dentro do form */
+form .field-group {
+
+    display: flex;
+
+}
+
+/* input [onde o usuário insere os dados] e select [onde aparece "selecione a cidade". Está dentro do form. */
+form input, form select {
+
+    /* Background-color definido no arquivo main.css */
+    background-color: var(--background-color);
+
+    border: 0;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    /* Preenchimento. */
+    padding: 16px 24px;
+
+    /* Tira o efeito visual de seleção da caixa. */
+    /* outline: none; */
+    
+}
+
+/* select ["selecione a cidade"] do form. */
+form select {
+
+    /* Faz o campo perder a característica de select.  */
+
+    appearance: none;
+   
+    /* Mozilla */
+    -moz-appearance: none;
+
+    /* Chrome */
+    -webkit-appearance: none; 
+
+}
+
+/* Label [campo de texto] do form. */
+form label {
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+}
+
+/* Campo da esquerda [Número/Complemento]. */
+form .field-group .field + .field {
+
+    margin-left: 24px;
+
+}
+
+/* Botão inserido dentro do form. */
+form button {
+
+    /* Background-color definido no arquivo main.css */
+    background-color: var(--primary-color);
+
+    border: 0;
+
+    border-radius: 8px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    height: 56px;
+
+    margin-top: 40px;
+
+    /* Demora de 400 milissegundos para a transição da cor. */
+    transition: 400ms;
+
+    width: 260px;
+
+}
+
+form button:hover{
+
+    /* Background-color definido no arquivo main.css. */
+    background-color: var(--hover-color);
+
+}
+
+/* Itens da grade. */
+.items-grid {
+
+    /* Exibição em grade. */
+    display: grid;
+
+    /* Lacuna entre cada elemento da grade */
+    gap: 16px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* li representa um item que faz parte da grade. */
+.items-grid li {
+
+    /* Alinha os itens. */
+    align-items: center;
+
+    background-color: #f5f5f5;
+
+    border: 2px solid #f5f5f5;
+
+    border-radius: 8px;
+
+    /* Coloca o cursor como uma "mãozinha". */
+    cursor: pointer;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 180px;
+
+    justify-content: space-between;
+
+    list-style: none;
+
+    padding: 32px 24px 16px;
+
+    text-align: center;
+
+}
+
+.items-grid li span{
+
+    align-items: center;
+    
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    display: flex;
+
+    flex: 1;
+
+    margin-top: 12px;
+
+}
+
+.items-grid li.selected{
+
+    background: #e1faec;
+
+    border: 2px solid #34cb79;
+
+}
+
+.items-grid li span,
+.items-grid li img{
+
+    pointer-events: none;
+
+}
+

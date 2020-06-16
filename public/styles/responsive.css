@@ -1,0 +1,91 @@
+/* CSS que faz a responsividade das Páginas. */
+
+@media (max-width: 900px){
+
+    /* Página Home. */
+    #page-home {
+
+        background-position-x: 70vw;
+
+    }
+
+    /* Conteúdo do Home. */
+    #page-home .content {
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+    /* a contido no header do Home. */
+    #page-home header a {
+
+        bottom: 48px;
+
+        left: 50%;
+
+        position: absolute;
+
+        transform: translateX(-50%);
+
+    }
+
+    /* Parte principal do Home. */
+    #page-home main {
+
+        align-items: center;
+        
+    }
+
+    /* Página de exibição de Pontos */
+    /* Cartões dos Pontos de Coleta. */
+    #page-search-results .cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    /* Imagens dos cartões dos pontos da página de exibição de Pontos. */
+    #page-search-results .cards img {
+
+        height: 450px;
+
+    }
+
+    /* Grupo de campos da Página de criação dos Pontos */
+    #page-creat-point .field-group {
+
+        /* Defini que flex, ao invés de ordenar horizontalmente, ordene verticalmente. */
+        flex-direction: column;
+
+    }
+
+    /* Campo da Página de criação dos Pontos */
+    #page-creat-point .field-group .field + .field{
+
+        margin-left: 0;
+
+    }
+
+}
+
+@media (min-width: 1700px) {
+
+    #page-home {
+
+        background-position-x: 40vw;
+
+    }
+
+}
+
+@media (max-height: 760px) {
+
+    #page-home {
+
+        background-position-y: 200px;
+
+    }
+
+}

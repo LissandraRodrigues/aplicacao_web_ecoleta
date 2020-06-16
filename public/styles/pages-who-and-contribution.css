@@ -1,0 +1,152 @@
+/* CSS da Página de Quem somos e Contribuição. */
+
+/* Formatação da Página no geral. */
+#page-who-and-contribution {
+
+    /* Alinhamento de caixa pelo lado de fora da caixa. */
+    margin: 0 auto;
+
+    max-width: 1100px;  
+
+    width: 90%;
+
+}
+
+/* Cabeçalho da Página. */
+#page-who-and-contribution header {
+
+    align-items: center;
+
+    /* Alinhamento de caixa pelo lado de dentro da caixa. */
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+}
+
+/* Tag <a> contida no Cabeçalho. */
+#page-who-and-contribution header a {
+
+    align-items: center;
+
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    /* Display que permite os itens ficarem um do lado do outro de forma flexível */
+    display: flex;
+
+    /* Tamanho da fonte */
+    font-weight: bold;
+
+}
+
+/* Tag <span> inserida dentro da tag <a> do Cabeçalho. */
+#page-who-and-contribution header a span {
+
+    /* Setinha - Voltar para Home */
+    background-image: url(../assets/arrow-left.svg);
+
+    display: flex;
+
+    height: 24px;
+
+    margin-right: 16px;
+
+    width: 20px;
+
+}
+
+/* Principal. */
+main {
+
+    margin: 48px 170px 300px 170px; 
+
+    background: white;
+
+    border-radius: 8px;
+
+    content: "";
+
+    position: fixed;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    top: 100px; 
+
+    z-index: -1;
+
+}
+
+main.contribution {
+ 
+    margin: 48px 170px 300px 170px; 
+
+
+}
+
+/* <h1> da parte Principal. */
+main h1 {
+
+    margin: 30px;
+
+    /* Cor definida no arquivo main.css */
+    color: var(--title-color);
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-weight: normal;
+
+    margin-bottom: 60px;
+
+} 
+
+main h2 {
+
+    margin-left: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+/* Parágrafo dentro do main. */
+main p{
+
+    color: #6c6c80;
+
+    font-size: 25px;
+
+    margin-left: 30px;
+
+}
+
+main p.contribution {
+
+    font-size: 20px;    
+
+}
+
+main .content{
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+main .content img {
+
+    margin-right: 30px;
+
+    border-radius: 8px;
+
+    width: 250px;
+
+    height: 200px;
+
+}

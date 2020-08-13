@@ -14,13 +14,11 @@ npm -> Gerenciador de Pacotes.
 
 No terminal, dentro da pasta do projeto:
 
-    - npm install express
-
-    - npm install nunjucks
+    $ npm install (Para instalar as dependências necessárias)
     
-    - npm install sqlite3
-
-- Deixei pré-definido que para iniciar o servidor é só digitar <b>npm start</b> no terminal.
+    $ npm start (Para iniciar o servidor)
+   
+- O projeto será executado no localhost na porta 3000 (http://localhost:3000/)
 
 # APIs
 

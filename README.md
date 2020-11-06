@@ -2,7 +2,7 @@
 
 Ecoleta é uma aplicação web que conecta pessoas que têm resíduos recicláveis a pontos de coleta de todo o Brasil. O usuário pode pesquisar os pontos de coleta existentes em seu Estado e/ou criar pontos de coleta.
 
-![alt text](https://github.com/LissandraRodrigues/aplicacao_web_ecoleta/blob/master/exemplo_ecoleta.png?raw=true)
+![alt text](https://github.com/LissandraRodrigues/aplicacao_web_ecoleta/blob/master/exemplo_ecoleta.jpg?raw=true)
 
 Para ver o vídeo de demonstração da aplicação <a href = "https://www.youtube.com/watch?v=QFSmhXbnT3Q&feature=youtu.be"> clique aqui. </a>
 
